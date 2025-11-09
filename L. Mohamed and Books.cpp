@@ -5,7 +5,7 @@
 using namespace std ;
 void solve()
 {
-    ll n ; cin>>n ;
+    ll n ;      cin>>n ;
     deque<ll>dq;
     ll z ;
     for(int i =0;i<n;i++)
@@ -14,12 +14,10 @@ void solve()
         dq.push_back(z);
     }
     priority_queue<ll>pq;
-    ll y ; cin >> y ;
+    ll y ;     cin >> y ;
     while(y--)
     {
-        char c ; cin>>c ;
-       
-        
+        char c ;     cin>>c ;
         if(c=='L')
         {
             if(!dq.empty())
@@ -28,14 +26,17 @@ void solve()
                 dq.pop_front();
             }
 
-        }else if(c=='R')
+        }
+        else if(c=='R')
         {
             if(!dq.empty())
             {
                 pq.push(dq.back());
                 dq.pop_back();
             }
-        }else {
+        }
+        else
+        {
             if(!pq.empty())
             {
                 cout<<pq.top()<<endl;
