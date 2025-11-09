@@ -5,12 +5,11 @@
 using namespace std ;
 void solve()
 {
-    string s ; cin >> s ;
+    string s ;     cin >> s ;
     stack<char> res ;
     ll ans = 0 ;
    for(int i=0 ; i<s.size() ; i++)
    {
-    
         if(s[i] == ')')
         {
             if(!res.empty())
@@ -30,8 +29,7 @@ void solve()
 int main()
 {
     // fast code
-    ios::sync_with_stdio(false),cout.tie(NULL),cin.tie(0);
-    
+    ios::sync_with_stdio(false),cout.tie(NULL),cin.tie(0);    
     solve();
     
     return 0 ;
