@@ -9,46 +9,36 @@ void solve()
     set<ll>s ;
     while(q--)
     {
-        string w ; ll x ; 
+        string w ;     ll x ; 
         cin >> w >> x ;
         if(w=="lower_bound") // >=
         {
             auto it = s.lower_bound(x) ;
             if(it!=s.end())
-            {
-                cout<<*it << endl;
-            }else
-            {
-                cout <<-1 << endl;
-            }
-
-        }else if (w == "upper_bound") // > 
+            cout<<*it << endl;
+            else
+            cout <<-1 << endl;
+            
+        }
+        else if (w == "upper_bound") // > 
         {
             auto it = s.upper_bound(x);
             if(it!=s.end())
-            {
-                cout <<*it<< endl;
-            }
+             cout <<*it<< endl;
             else
-            {
-                cout<<-1 << endl;
-            }
-
-        }else if(w=="find")
+             cout<<-1 << endl;
+            
+        }
+        else if(w=="find")
         {
             if(s.count(x))
-            {
-                cout<<"found"<< endl;
-            }
+            cout<<"found"<< endl;
             else
-            {
-                cout<<"not found" << endl;
-            }
-
-        }else // w== "insert"
-        {
-            s.insert(x) ;
+            cout<<"not found" << endl;
+            
         }
+        else // w== "insert"
+        s.insert(x) ;
     }
 
 }
