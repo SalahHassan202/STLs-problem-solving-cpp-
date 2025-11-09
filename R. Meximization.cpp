@@ -1,4 +1,5 @@
 // R. Meximization
+
 #include <bits/stdc++.h>
 #define ll long long
 #define fast                     \
@@ -14,11 +15,12 @@ void solve()
     // MEX({0,1,2})=3
     // MEX({0,1,2,3})=4
     // MEX({0,1,2,3,4})=5
+    
     ll n;
     cin >> n;
     vector<ll> v(n);
-    for (int i = 0; i < n; i++)
-        cin >> v[i];
+    for (int i = 0; i < n; i++)   cin >> v[i];  
+        
     sort(v.begin(), v.end());
     vector<ll> du;
     for (int i = 0; i < n; i++)
