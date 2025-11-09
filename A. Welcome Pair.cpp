@@ -6,18 +6,14 @@ using namespace std ;
 bool compare (pair<ll,ll>& a , pair<ll,ll>& b )
 {
     if(a.second > b.second)
-    {
-        return true ;
-    }
+    return true ;
     else
-    {
-        return false;
-    }
+     return false;
 }
 
 void solve()
 {
-    ll n ; cin >> n ;    //  size
+    ll n ;     cin >> n ;    //  size
     vector<pair<ll,ll>> v(n) ;
     for(int i = 0 ; i < n ; i++)
     {
