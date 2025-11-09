@@ -5,13 +5,11 @@
 using namespace std ;
 void solve()
 {
-    ll n ; cin >> n ;
+    ll n ;    cin >> n ;
    vector<ll>v(n);
-   for(int i = 0 ; i <n ;i++)
-   {
-        cin>>v[i] ;
-   }
-   vector<ll> od ,ev ; // odd , even 
+   for(int i = 0 ; i <n ;i++)    cin>>v[i] ;
+
+   vector<ll> od ,ev ;     // odd , even 
    for(int i = 0 ; i<n ;i++)
    {
         if(v[i]% 2==0)
@@ -30,7 +28,7 @@ void solve()
    }
    else
    {
-    cout<<"No" << endl;
+        cout<<"No" << endl;
    }
   
 
