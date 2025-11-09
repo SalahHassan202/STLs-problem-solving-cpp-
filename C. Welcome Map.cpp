@@ -5,11 +5,11 @@
 using namespace std ;
 void solve()
 {
-    ll n , q ; cin>> n >> q ;
+    ll n , q ;        cin>> n >> q ;
     map<string ,ll> mp ;
     for(int i=0;i<n;i++)
     {
-        string s ; ll x ;
+        string s ;     ll x ;
         cin>> s >> x ;
         mp[s]=x ;
     }
@@ -18,7 +18,7 @@ void solve()
         ll t; cin >> t; 
         if(t == 1)
         {
-            string s ; ll x ;
+            string s ;     ll x ;
             cin >> s>> x ;
             mp[s]+=x;
         }
@@ -42,6 +42,5 @@ int main()
         solve();
     }
   
-    
     return 0 ;
 }
