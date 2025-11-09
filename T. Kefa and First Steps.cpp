@@ -4,27 +4,23 @@
 #define ll long long
 using namespace std ;
 
-
 void solve()
 {
-    ll n ; cin >> n ;
+    ll n ;      cin >> n ;
     vector<ll>v(n);
-    for(int i=0;i<n ;i++)
-    {
-        cin >>v[i];
-    }
+    for(int i=0;i<n ;i++)   cin >>v[i];
+
     ll cnt = 1 , ans = 1;
     for(int i = 1 ;i<n ;i++)
     {
         if(v[i] >= v[i-1])
-        cnt++;
+            cnt++;
         else
-        cnt=1 ;
+            cnt=1 ;
 
         ans = max(cnt,ans) ;
     }
 
-    
     cout << ans <<endl;
 }
 int main()
