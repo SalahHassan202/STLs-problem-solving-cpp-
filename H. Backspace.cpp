@@ -5,7 +5,7 @@
 using namespace std ;
 void solve()
 {
-    string s ; cin >> s ;
+    string s ;     cin >> s ;
     stack<char> res ;
    for(int i=0 ; i<s.size() ; i++)
    {
@@ -22,13 +22,14 @@ void solve()
             res.push(s[i]);
         }
    }
+    
     vector<char> v ;
    while(!res.empty())
    {
        v.push_back(res.top()) ;
         res.pop();
    }
-
+    
    reverse(v.begin() , v.end()) ;      // reverse for vector
 
    // print element of vector
