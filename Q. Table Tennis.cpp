@@ -1,4 +1,5 @@
 // Q. Table Tennis
+
 #include <bits/stdc++.h>
 #define ll long long
 #define fast                     \
@@ -37,7 +38,7 @@ void solve()
                 break;
             }
         }
-        else // p2 ==> win
+        else   // p2 ==> win
         {
             dq.push_back(p1);
             p2.second++;
