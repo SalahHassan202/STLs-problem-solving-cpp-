@@ -5,7 +5,7 @@
 using namespace std ;
 void solve()
 {
-    ll n , m ; cin >> n >> m;
+    ll n , m ;      cin >> n >> m;
     queue<pair<ll,ll>>q ;
     ll y ;
     for(int i=0;i<n ; i++)
@@ -16,9 +16,7 @@ void solve()
     while(q.size()!=1)
     {
         if(q.front().first <= m)
-        {
             q.pop();
-        }
         else
         {
             q.front().first -=m ;
@@ -26,6 +24,7 @@ void solve()
             q.pop() ;
         }
     }
+    
     cout<<q.front().second << endl;
 
 }
