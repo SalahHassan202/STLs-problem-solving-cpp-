@@ -6,38 +6,33 @@ using namespace std ;
 void solve()
 {
    multiset<ll>ms;
-   ll q ; cin>> q ;
+   ll q ;       cin>> q ;
    while(q--)
    {
-     ll y ; cin>> y ;
+     ll y ;     cin>> y ;
        
         if(y ==1)
         {
             ll x ; cin>> x ;
             ms.insert(x) ;
             
-        }else if(y == 2)
+        }
+        else if(y == 2)
         {
-            ll x ; cin>> x ;
+            ll x ;     cin>> x ;
             auto it = ms.find(x) ;
             if(it!=ms.end())
-            {
-                ms.erase(it);
-            }
-        }else // y = 3
+             ms.erase(it);
+        }
+        else // y = 3
         {
             auto it = ms.begin();
             if(ms.empty())
-            {
-                cout <<"It is Just EMPTY" << endl;
-            }
+            cout <<"It is Just EMPTY" << endl;
             else
-            {
-                cout << *it << endl;
-            }
+            cout << *it << endl;
         }
    }
-
 
 }
 int main()
