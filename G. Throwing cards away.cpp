@@ -5,7 +5,7 @@
 using namespace std ;
 void solve()
 {
-    int n ; cin >>n  ;
+    int n ;    cin >>n  ;
     queue<ll> q ;
     for(int i = 1 ; i <= n ; i++)
     {
@@ -17,12 +17,14 @@ void solve()
         // 1 2 3 4 5 6 7   ===> cout 1
         // 2 3 4 5 6 7     ===> pop(2) 
         // 3 4 5 6 7 2     ===> push(2)
+        
         cout<<q.front() << " " ;
         q.pop() ;
         q.push(q.front()) ;
         q.pop() ;
     }
     cout << endl; 
+    
     cout << q.front() << endl;
 }
 int main()
