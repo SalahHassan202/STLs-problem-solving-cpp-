@@ -9,7 +9,7 @@ void solve()
     ll q ;   cin >> q ;
     while(q--)
     {
-        string s ; cin >> s ;
+        string s ;    cin >> s ;
         if(s == "push")
         {
             ll n ;cin>> n ;
@@ -19,17 +19,13 @@ void solve()
         else if(s == "pop")
         {
             if(!st.empty())
-            {
-                st.pop() ;
-            }
+            st.pop() ;
+            
         }
         else     // (s == "top")
         {
             if(!st.empty())
-            {
-                
-                cout<<  st.top() << endl;
-            }
+             cout<<  st.top() << endl;
         }
     }
 }
