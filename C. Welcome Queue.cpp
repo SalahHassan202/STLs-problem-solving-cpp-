@@ -1,15 +1,16 @@
 // C. Welcome Queue
+
 #include<bits/stdc++.h>
 #define ll long long
 using namespace std ;
 queue<ll>qu;
 void solve()
 {
-    ll t ; cin >> t ;
+    ll t ;   cin >> t ;
     while(t--)
     {
         ll id , n ; cin >> id >> n ;
-        if(id ==1 )
+        if(id == 1 )
         {
             qu.push(n) ;
         }
