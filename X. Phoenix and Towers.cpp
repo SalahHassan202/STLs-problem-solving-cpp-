@@ -10,12 +10,10 @@ using namespace std;
 
 void solve()
 {
-    ll n, m, x;
-    cin >> n >> m >> x;
+    ll n, m, x;      cin >> n >> m >> x;
     vector<ll> v(n);
-    for (int i = 0; i < n; i++)
-        cin >> v[i];
-
+    for (int i = 0; i < n; i++)     cin >> v[i];
+    
     priority_queue<pair<ll, ll>, vector<pair<ll, ll>>, greater<pair<ll, ll>>> pq;
     cout << "YES" << endl;
     for (int i = 0; i < n; i++)
