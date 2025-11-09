@@ -7,7 +7,7 @@ using namespace std ;
 
 void solve()
 {
-    string s ; cin >> s;
+    string s ;       cin >> s;
     stack<char>st;
     ll cnt = 0;
     for(int i = 0 ; i<s.size() ; i++)
